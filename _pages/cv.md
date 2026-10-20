@@ -9,7 +9,28 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<style>
+.cv-iframe {
+  width: 100%;
+  min-height: min(74vh, 960px);
+  border: 0;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .cv-iframe { min-height: 65vh; }
+}
+.cv-fallback-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.8em;
+}
+</style>
+
+<iframe class="cv-iframe" src="{{ base_path }}/files/cv.pdf#view=FitH" title="Salonee Verma CV" loading="lazy"></iframe>
+
+<p class="cv-fallback-note">If the embedded preview does not load in your browser, <a href="{{ base_path }}/files/cv.pdf">open the PDF directly</a>.</p>
+
+
+<!-- Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
@@ -61,4 +82,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
